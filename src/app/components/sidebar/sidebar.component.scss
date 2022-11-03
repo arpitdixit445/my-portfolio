@@ -23,7 +23,7 @@
     .email-container{
         writing-mode: vertical-rl;
         transform: translateX(-400%) rotate(180deg);
-        animation: from-left-email var(--side-bar-animation-duration) ease-out 100ms;
+        animation: from-left-email var(--side-bar-animation-duration) ease-out 700ms;
         animation-fill-mode: forwards;
         a{
             text-decoration: none;
@@ -48,7 +48,7 @@
      width: min-content;
      height: min-content;
      transform: translateX(-400%);
-     animation: from-left var(--side-bar-animation-duration) ease-out 200ms;
+     animation: from-left var(--side-bar-animation-duration) ease-out 800ms;
      animation-fill-mode: forwards;
      
      
