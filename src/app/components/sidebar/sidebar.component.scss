@@ -1,0 +1,109 @@
+.sidebar-container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 26px;
+    z-index: 1;
+    margin-top: 37px;
+    top: 0px;
+
+    .vertical-line{
+        display: inline-block;
+        width: 2px;
+        background-color: black;
+        height: 20px;
+        margin: 20px 0px;
+        opacity: 0;
+        animation: from-top var(--side-bar-animation-duration) ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .email-container{
+        writing-mode: vertical-rl;
+        transform: translateX(-400%) rotate(180deg);
+        animation: from-left-email var(--side-bar-animation-duration) ease-out 100ms;
+        animation-fill-mode: forwards;
+        a{
+            text-decoration: none;
+            font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+            color: black;
+            font-size: 14px;
+            transition: 0.1s linear;
+            -webkit-transition:0.1s linear;
+            
+        }
+        a:hover{
+            color: rgb(144, 144, 144);
+            font-size: 14.2px;
+            // margin-top: -3px;
+        }
+    }
+
+}
+
+.hyperlink-logo-container{
+     display: inline;
+     width: min-content;
+     height: min-content;
+     transform: translateX(-400%);
+     animation: from-left var(--side-bar-animation-duration) ease-out 200ms;
+     animation-fill-mode: forwards;
+     
+     
+     ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        width: min-content;
+        height: min-content;
+
+        a{
+            width: fit-content;
+            height: fit-content;
+            display: inline-block;
+            transition: 0.1s linear;
+            -webkit-transition: 0.1s linear;
+        }
+        a:hover{
+            transform: scale(1.1);
+            // margin-bottom: 2px;
+        }
+
+        img{
+            transition: 0.1s linear;
+            -webkit-transition: 0.1s linear;
+        }
+
+        img:hover{
+            -webkit-filter: drop-shadow(1px 1px 0px rgb(156, 156, 156));
+            filter: drop-shadow(1px 1px 0px rgb(156, 156, 156));
+        }
+    }
+
+    li{
+        display: inline-block;
+        text-align: center;
+        width: min-content;
+        height: min-content;
+        margin: 8px 0px;
+    }
+
+    .hyperlink-logo{
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@keyframes from-left-email{
+    0%{
+        transform: translateX(-400%) rotate(180deg);
+    }
+
+    100%{
+        transform: translateX(0%) rotate(180deg);
+    }
+}

@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: 0px;
+    // background-color: #DEF5E5;
+    --side-bar-animation-duration:400ms;
+    --anchor-animation : from-top-anchor 300ms ease-out;
+}
+
+@keyframes from-left{
+    0%{
+        transform: translateX(-400%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes from-top{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes from-top-anchor{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
